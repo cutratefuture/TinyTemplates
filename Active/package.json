@@ -1,0 +1,28 @@
+{
+  "name": "info-site",
+  "version": "1.0.0",
+  "private": true,
+  "author": "cutratefuture & PyOfile",
+  "license": "see LICENSE in license",
+  "scripts": {
+    "dev": "nodemon -e ejs,css app.js",
+    "trace": "node --trace-deprecation app.js",
+    "sass": "dart-sass public/scss/index.scss public/css/index.css",
+    "p1": "sh ~/.bash/bin/gitpull.sh",
+    "p2": "sh ~/.bash/bin/gitpush.sh",
+    "nn": "sudo rm -r node_modules",
+    "light": "lighthouse http://localhost:5560/ --view"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "http-errors": "^1.8.0",
+    "morgan": "^1.10.0",
+    "sass": "^1.32.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
